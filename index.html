@@ -14,10 +14,51 @@
 
     <div id="cookie-banner" class="cookie-banner">
       <p>
-        Kami menggunakan cookie untuk meningkatkan pengalaman kamu di website
-        ini.
+        Kami menggunakan cookie untuk menjalankan website dan meningkatkan
+        pengalamanmu. Kamu bisa memilih cookie mana yang diizinkan.
       </p>
-      <button id="accept-btn">Terima</button>
+
+      <div class="cookie-actions">
+        <button id="reject-btn" class="btn btn-secondary">Tolak semua</button>
+        <button id="settings-btn" class="btn btn-secondary">
+          Atur preferensi
+        </button>
+        <button id="accept-btn" class="btn btn-primary">Terima semua</button>
+      </div>
+
+      <div id="cookie-settings" class="cookie-settings hidden">
+        <label>
+          <input type="checkbox" checked disabled />
+          <span
+            ><strong>Necessary</strong>
+            <small>Wajib untuk menjalankan website. Selalu aktif.</small></span
+          >
+        </label>
+        <label>
+          <input type="checkbox" id="pref-preferences" />
+          <span
+            ><strong>Preferences</strong>
+            <small>Mengingat bahasa dan tema pilihanmu.</small></span
+          >
+        </label>
+        <label>
+          <input type="checkbox" id="pref-analytics" />
+          <span
+            ><strong>Analytics</strong>
+            <small
+              >Membantu kami memahami bagaimana website dipakai.</small
+            ></span
+          >
+        </label>
+        <label>
+          <input type="checkbox" id="pref-marketing" />
+          <span
+            ><strong>Marketing</strong>
+            <small>Menampilkan iklan yang lebih relevan.</small></span
+          >
+        </label>
+        <button id="save-btn" class="btn btn-primary">Simpan pilihan</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
